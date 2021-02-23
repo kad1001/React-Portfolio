@@ -33,6 +33,19 @@ class List extends React.Component {
       );
   }
 
+    getIcon(item) {
+      const javascriptIcon = <i class="fab fa-js"></i>
+      const htmlIcon = <i class="fab fa-html5"></i>
+      const cssIcon = <i class="fab fa-css3-alt"></i>
+      if (item.language === "JavaScript") {
+        return javascriptIcon
+      } else if (item.language === "HTML") {
+        return htmlIcon
+      } else if (item.language === "CSS") {
+        return cssIcon
+      }
+    }
+
   render() {
     const { error, isLoaded, items } = this.state;
     if (error) {
@@ -47,10 +60,15 @@ class List extends React.Component {
               {items.map(item => (
                 item.fork ? '' :
                 <li key={item.name}>
-                  {" "}
-                  <a href={item.html_url}>{item.name}</a>
+                  
+                  <h5>{item.name} {this.getIcon(item)}</h5>
+                
                   <p>{item.description}</p>
-                  <p>Written in {item.language}</p>
+     
+                  {/* <p>Written in {item.language}</p> */}
+                  <a href={item.html_url}>Repository</a>
+                  <br></br>
+                  {item.homepage ? <a href={item.homepage}>Demo</a> : '' }
                 </li>
               ))}
             </ul>

@@ -17,7 +17,7 @@ const routes = [
     // sidebar: () => <div>home!</div>,
     main: () => <div>
     <h2>Hi, I'm Kelly.</h2>
-    <p>I'm a web developer based in New Hampshire that is always looking for a challenge. Feel free to explore my portfolio and email me at kellyadavis7@gmail.com. Thank you for stopping by. </p>
+    <p>I'm a web developer based in Vermont that is always looking for a challenge. Feel free to explore my portfolio and email me at kellyadavis7@gmail.com. Thank you for stopping by. </p>
     </div>
 
   },
