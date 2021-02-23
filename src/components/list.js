@@ -45,10 +45,12 @@ class List extends React.Component {
           <div>
             <ul>
               {items.map(item => (
+                item.fork ? '' :
                 <li key={item.name}>
                   {" "}
                   <a href={item.html_url}>{item.name}</a>
                   <p>{item.description}</p>
+                  <p>Written in {item.language}</p>
                 </li>
               ))}
             </ul>
