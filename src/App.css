@@ -31,3 +31,23 @@
     transform: rotate(360deg);
   }
 }
+
+/* Javascript logo */
+.fa-js {
+  color: #FBDC01;
+  background-color: black;
+  /* Round out corners */
+  border-radius: 5px;
+  border: 2px solid black;
+}
+
+/* HTML5 logo */
+
+.fa-html5 {
+  color: #DD4B25;
+}
+
+/* CSS3 logo */
+.fa-css3-alt {
+  color: #264DE4;
+}

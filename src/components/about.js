@@ -5,7 +5,7 @@ function About() {
     <div>
       <h2>About</h2>
 
-      <p>Email: kellyadavis7@gmail.com</p>
+      <p>Email: hello@kellydavis.dev</p>
       <a href="https://github.com/kad1001">Github</a>
       <br></br>
       <a href="https://www.linkedin.com/in/kelly-davis-573316a9/">LinkedIn</a>

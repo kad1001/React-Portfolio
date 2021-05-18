@@ -34,7 +34,7 @@ class List extends React.Component {
   }
 
     getIcon(item) {
-      const javascriptIcon = <i class="fab fa-js"></i>
+      const javascriptIcon = <i class="fab fa-js" a="Javascript"></i>
       const htmlIcon = <i class="fab fa-html5"></i>
       const cssIcon = <i class="fab fa-css3-alt"></i>
       if (item.language === "JavaScript") {
@@ -62,10 +62,7 @@ class List extends React.Component {
                 <li key={item.name}>
                   
                   <h5>{item.name} {this.getIcon(item)}</h5>
-                
                   <p>{item.description}</p>
-     
-                  {/* <p>Written in {item.language}</p> */}
                   <a href={item.html_url}>Repository</a>
                   <br></br>
                   {item.homepage ? <a href={item.homepage}>Demo</a> : '' }
